@@ -1,0 +1,4 @@
+# Cloudflare Pages / Netlify redirect rules.
+# The .co.uk to .com redirect is configured at the DNS/host level instead,
+# see README step 6. This file handles in-site tidying only.
+/index.html   /   301

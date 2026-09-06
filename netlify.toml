@@ -1,0 +1,10 @@
+# Netlify configuration. No build step: the site is published as-is.
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
