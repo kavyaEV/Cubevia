@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Cubevia | Off-Site Construction Support, Estimation &amp; Takeoff</title>
-<meta name="description" content="Cubevia works as an off-site extension of your construction team: lead and ITB tracking, quantity takeoffs, estimation, bidding, sales support and project coordination. Plans from £699 per month.">
+<title>Cubevia | Pre-Construction, Estimating &amp; Tender Support</title>
+<meta name="description" content="Cubevia is a UK pre-construction support team for fabricators, manufacturers and contractors: tender management, estimating and take-offs, technical detailing, coordination and custom AI workflows.">
 <link rel="canonical" href="https://cubevia.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cubevia.com/">
 <meta property="og:site_name" content="Cubevia">
-<meta property="og:title" content="Cubevia | Off-Site Construction Support">
-<meta property="og:description" content="You focus on the field. We handle the work behind it. Estimation, takeoff, pre-construction, sales support and project management for construction businesses.">
+<meta property="og:title" content="Cubevia | Pre-Construction, Estimating &amp; Tender Support">
+<meta property="og:description" content="You build. We handle the work behind it. Tenders, take-offs, estimates and coordination for UK construction businesses, with AI built into every step.">
 <meta property="og:image" content="https://cubevia.com/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,20 +21,27 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
-<meta name="theme-color" content="#16212B">
+<meta name="theme-color" content="#07142B">
 
-<link rel="preload" as="font" type="font/woff2" href="assets/fonts/outfit-regular.woff2">
-<link rel="preload" as="font" type="font/woff2" href="assets/fonts/lora-bold.woff2">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/plus-jakarta-sans-variable.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-team.webp">
 <link rel="stylesheet" href="assets/css/styles.css">
+<script>
+  /* Hide animated parts until effects.js plays them. Falls back to fully visible. */
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('fx');
+    setTimeout(function () { if (!window.__cubeviaFx) { document.documentElement.classList.remove('fx'); } }, 3000);
+  }
+</script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Cubevia",
-  "description": "Off-site construction support: estimation, takeoff, pre-construction, sales support and project management.",
+  "description": "Pre-construction, estimating and tender support for UK fabricators, manufacturers and contractors, with custom AI workflows.",
   "url": "https://cubevia.com/",
-  "logo": "https://cubevia.com/assets/logo/cubevia-horizontal.svg",
+  "logo": "https://cubevia.com/assets/logo/cubevia-mark-480.png",
   "image": "https://cubevia.com/assets/img/og-image.png",
   "legalName": "Cubevia Ltd",
   "address": {
@@ -45,9 +52,8 @@
     "addressCountry": "GB"
   },
   "email": "contact@cubevia.com",
-  "areaServed": ["United States", "United Kingdom"],
-  "priceRange": "From £699 per month",
-  "founder": { "@type": "Person", "name": "Kavi Lakshmi" }
+  "areaServed": ["United Kingdom"],
+  "founder": { "@type": "Person", "name": "Kavya Vivekanandhan" }
 }
 </script>
 </head>
@@ -59,23 +65,24 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a class="brand" href="#top" aria-label="Cubevia home">
-      <img src="assets/logo/cubevia-horizontal-ondark.svg" alt="Cubevia" width="190" height="63">
+      <picture>
+        <source srcset="assets/logo/cubevia-mark-144.webp" type="image/webp">
+        <img src="assets/logo/cubevia-mark-144.png" alt="" width="126" height="144">
+      </picture>
+      <span class="wordmark">CUBE<span>VIA</span></span>
     </a>
 
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <a href="#services">Services</a>
-      <a href="#model">How it works</a>
-      <a href="#packages">Packages</a>
+      <a href="#ai">AI workflows</a>
+      <a href="#how">How we work</a>
       <a href="#about">About</a>
-      <div class="nav-cta">
-        <a class="btn btn-ghost btn-sm" href="#quote">Request a quote</a>
-        <a class="btn btn-gold btn-sm" href="#quote">Book a consultation</a>
-      </div>
+      <a class="btn btn-gold btn-sm nav-cta" href="#contact"><span>Book a consultation</span></a>
     </nav>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
       <span class="sr-only">Menu</span>
-      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="bars" aria-hidden="true"><i></i><i></i></span>
     </button>
   </div>
 </header>
@@ -85,304 +92,383 @@
 
 <!-- ============================================================== HERO -->
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <p class="eyebrow">Off-site construction support</p>
-      <h1>You focus on the field.<br>We handle the work behind it.</h1>
-      <p class="lede">Cubevia works as an off-site extension of your construction team, bringing
-        clarity and momentum to every opportunity, bid and awarded project.</p>
-      <div class="btn-row">
-        <a class="btn btn-gold" href="#quote">Book a consultation</a>
-        <a class="btn btn-ghost" href="#quote">Request a quote</a>
-      </div>
-      <hr class="rule">
-      <p class="meta">UK-based construction support &nbsp;·&nbsp; 5+ years of hands-on industry experience</p>
-    </div>
-
-    <div class="hero-figure reveal" data-delay="1">
-      <span class="corner-accent" aria-hidden="true"></span>
-      <div class="figure-frame">
-        <img src="assets/img/hero.svg" alt="Reviewing construction drawings and quantities off site"
-             width="820" height="620" loading="eager">
-      </div>
-      <div class="figure-card">
-        <p class="eyebrow eyebrow-sm">Off site, in step</p>
-        <p>The operational detail that lets your field team stay focused.</p>
-      </div>
+  <div class="hero-media" aria-hidden="true">
+    <img id="heroImg" src="assets/img/hero-team.webp" alt="" width="1376" height="768" fetchpriority="high">
+  </div>
+  <div class="container hero-inner">
+    <p class="hero-tag">Pre-construction support for UK construction businesses</p>
+    <h1 data-text-effect>
+      <span class="line">You build</span>
+      <span class="line gold-text">We handle the work behind it</span>
+    </h1>
+    <p class="hero-lede">Tenders, take-offs, estimates and the paperwork in between, handled by
+      a remote pre-construction team with AI built into every step.</p>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="#contact"><span>Book a consultation</span></a>
+      <a class="btn btn-glass" href="#services"><span>Explore services</span></a>
     </div>
   </div>
 </section>
 
-<!-- ========================================================== SERVICES -->
-<section class="section section-paper" id="services">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">What we handle</p>
-      <h2 class="h2-lead">Behind every well-delivered project is a well-run operation.</h2>
+<!-- ============================================================ MARQUEE -->
+<div class="marquee" data-infinite-slider data-speed="60" data-speed-hover="20" aria-hidden="true">
+  <ul class="marquee-track">
+    <li>Tender management</li><li>Estimating</li><li>Take-offs</li><li>Technical detailing</li>
+    <li>Design coordination</li><li>Project coordination</li><li>AI workflows</li>
+  </ul>
+</div>
+
+<!-- ========================================================= STATEMENT -->
+<section class="section statement">
+  <div class="container statement-grid">
+    <p class="statement-text" data-scroll-words>Cubevia is your remote pre-construction team.
+      We take tenders, take-offs, estimates and the paperwork in between off your desk, so your
+      people can stay on the work that pays.</p>
+
+    <div class="statement-media">
+      <figure class="frame frame-a">
+        <img src="assets/img/drawings-wide.webp" alt="Construction drawings being reviewed with a scale rule and calculator" width="1400" height="842" loading="lazy">
+      </figure>
+      <figure class="frame frame-b">
+        <img src="assets/img/team-drawings.webp" alt="A project team reviewing drawings and a pricing sheet together" width="976" height="768" loading="lazy">
+      </figure>
     </div>
 
-    <div class="card-pair">
-      <article class="card card-light reveal">
-        <p class="card-index">01 / Before the project</p>
-        <h3>Turn opportunity into a sharper bid.</h3>
-        <ul class="ticks">
-          <li>Lead and ITB identification</li>
-          <li>Bid opportunity tracking</li>
-          <li>Quantity takeoffs and estimation</li>
-          <li>Proposal preparation and bid submission</li>
-          <li>Follow-ups and sales support</li>
-          <li>Client communication and pre-construction coordination</li>
-        </ul>
-      </article>
-
-      <article class="card card-dark reveal" data-delay="1">
-        <p class="card-index">02 / After winning the project</p>
-        <h3>Keep delivery organised long after award.</h3>
-        <ul class="ticks ticks-2col">
-          <li>Project documentation and submittal coordination</li>
-          <li>RFI and information tracking</li>
-          <li>Change order documentation</li>
-          <li>Client, vendor and subcontractor communication</li>
-          <li>Schedule and milestone tracking</li>
-          <li>Project records and overall off-site coordination</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================= MODEL -->
-<section class="section section-paper" id="model">
-  <div class="container">
-    <div class="section-head section-head-stack">
-      <p class="eyebrow">The Cubevia model</p>
-      <h2>One connected team, from lead to close.</h2>
-    </div>
-
-    <div class="flow">
-      <article class="flow-card reveal">
-        <p class="card-index">Client's team, on site</p>
-        <p class="flow-list">Manufacturing · Supply · Installation · Field execution</p>
-      </article>
-
-      <span class="flow-arrow" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-          <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
-
-      <article class="flow-card flow-card-dark reveal" data-delay="1">
-        <p class="card-index">Cubevia, off site</p>
-        <p class="flow-list">Leads · ITBs · Takeoff · Estimation · Bidding · Sales support ·
-          Client follow-up · Documentation · Pre-construction · Project coordination ·
-          Project management</p>
-      </article>
-
-      <span class="flow-arrow" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-          <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
-
-      <article class="flow-card reveal" data-delay="2">
-        <p class="card-index">Result</p>
-        <p class="flow-list flow-result">More opportunities → Better bids → More wins →
-          Organised projects → Stronger client relationships</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================== CHANGES -->
-<section class="section section-paper-soft">
-  <div class="container benefits-grid">
-    <div class="benefits-head reveal">
-      <p class="eyebrow">What changes</p>
-      <h2>A more capable operation, without a bigger internal department.</h2>
-    </div>
-
-    <ol class="benefits">
-      <li class="reveal">
-        <span class="num">01</span>
-        <h3>Respond while the opportunity is live</h3>
-        <p>Track incoming opportunities and move from ITB to submission with a focused off-site workflow.</p>
-      </li>
-      <li class="reveal" data-delay="1">
-        <span class="num">02</span>
-        <h3>Bid with greater confidence</h3>
-        <p>Accurate takeoffs, estimates and proposal support give your team a stronger basis for every submission.</p>
-      </li>
-      <li class="reveal" data-delay="1">
-        <span class="num">03</span>
-        <h3>Keep the pipeline moving</h3>
-        <p>Consistent follow-ups and documented client communication make progress easier to see and manage.</p>
-      </li>
-      <li class="reveal" data-delay="2">
-        <span class="num">04</span>
-        <h3>Carry control beyond award</h3>
-        <p>Coordinate information, records and milestones so project delivery starts in an organised place.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ========================================================== TEAM BAND -->
-<section class="band">
-  <div class="container band-grid">
-    <h2 class="reveal">An experienced off-site construction team, without building a full internal department.</h2>
-    <p class="reveal" data-delay="1">Our professionals work directly alongside your team and become an
-      extension of your business, bringing over <strong>5 years of hands-on construction industry
-      experience</strong> to every workflow.</p>
-  </div>
-</section>
-
-<!-- ========================================================== PACKAGES -->
-<section class="section section-paper" id="packages">
-  <div class="container packages-grid">
-    <div class="reveal">
-      <p class="eyebrow">Flexible monthly packages</p>
-      <h2>Scale support around the way you work.</h2>
-    </div>
-
-    <div class="price-card reveal" data-delay="1">
-      <p class="price">Plans from <strong>£699</strong> per month</p>
-      <p class="price-lede">Try Cubevia for a month and gain an experienced off-site construction team
-        without the cost of building a full internal department.</p>
-      <hr class="rule">
-      <p class="small">Software and subscription costs are not included in the package and will be
-        charged separately where applicable.</p>
-      <a class="link-arrow" href="#quote">Get a custom quote
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-          <path d="M5 12h13M12 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================================= WHO WE HELP -->
-<section class="section section-clay">
-  <div class="container">
-    <div class="section-head section-head-stack">
-      <p class="eyebrow">Who we help</p>
-      <h2>Built for construction businesses with work to win and deliver.</h2>
-    </div>
-
-    <ul class="who-grid reveal">
-      <li>General contractors</li>
-      <li>Subcontractors</li>
-      <li>Specialty contractors</li>
-      <li>Construction companies</li>
-      <li>Product manufacturers</li>
-      <li>Installation contractors</li>
+    <ul class="facts">
+      <li><strong>UK registered</strong><span>Cubevia Ltd, England and Wales</span></li>
+      <li><strong>5+ years</strong><span>Hands-on estimating experience</span></li>
+      <li><strong>Human checked</strong><span>A person reviews every output</span></li>
     </ul>
   </div>
 </section>
 
-<!-- ============================================================= ABOUT -->
-<section class="section section-paper" id="about">
-  <div class="container about-grid">
-    <div class="about-figure reveal">
-      <img src="assets/img/about.svg" alt="Estimating and documentation work carried out off site"
-           width="700" height="560" loading="lazy">
+<!-- ========================================================== SERVICES -->
+<section class="section services" id="services">
+  <div class="container services-head">
+    <div>
+      <h2>What we take off your desk</h2>
+      <p class="section-lede">Use one service for a busy month or hand us the whole
+        pre-construction process. Select a card for the detail.</p>
     </div>
-    <div class="reveal" data-delay="1">
-      <p class="eyebrow">About Cubevia</p>
-      <h2>Reliable support, built around the way construction teams operate.</h2>
-      <p>Cubevia is a UK-based company founded by Kavi Lakshmi. We provide off-site construction
-        support across estimation, takeoff, sales and bidding, pre-construction and project
-        management, so clients can focus on delivering work on site.</p>
+    <div class="carousel-btns">
+      <button class="cbtn" type="button" data-carousel="prev" aria-controls="svcTrack" aria-label="Previous services">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="cbtn" type="button" data-carousel="next" aria-controls="svcTrack" aria-label="Next services">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
     </div>
+  </div>
+
+  <ul class="carousel-track" id="svcTrack" tabindex="0" aria-label="Services">
+    <li class="svc" data-support="Tender management">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-tender.webp" alt="" width="640" height="800" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Tender management</span>
+          <span class="svc-line">Every invitation to tender logged, read and returned on time.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Tender and drawing review</li><li>Tender inbox and deadline tracking</li>
+          <li>Supplier and subcontractor enquiries</li><li>Submission coordination and follow-ups</li>
+          <li>Tender comparison and reporting</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="Estimating and take-offs">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-estimating.webp" alt="" width="640" height="800" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Estimating and take-offs</span>
+          <span class="svc-line">Quantities and prices you can tender with confidence.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Drawing and specification review</li><li>Quantity take-offs and material calculations</li>
+          <li>Fabrication, labour and installation costs</li><li>Bills of quantities and pricing schedules</li>
+          <li>Quotations, scope and exclusions</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="Technical detailing and CAD">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-detailing.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Technical detailing and CAD</span>
+          <span class="svc-line">Drawings your workshop can build from.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Steel detailing in Tekla Structures</li><li>General arrangement, fabrication and erection drawings</li>
+          <li>Metalwork shop drawings</li><li>AutoCAD drafting and Revit modelling</li>
+          <li>Material and bolt lists</li></ul>
+        <p>Structural calculations and engineering design are carried out by qualified, insured engineers.</p>
+      </div>
+    </li>
+    <li class="svc" data-support="Design or project coordination">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-coordination.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Design coordination</span>
+          <span class="svc-line">Approvals and revisions that never stall production.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Drawing registers and revision control</li><li>Technical submissions and approval tracking</li>
+          <li>RFI coordination</li><li>Material and finish approvals</li>
+          <li>Liaison with architects and engineers</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="Design or project coordination">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-project.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Project coordination</span>
+          <span class="svc-line">Programmes, deliveries and records kept in order after award.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Programme updates</li><li>Procurement and delivery tracking</li>
+          <li>Meeting minutes and status reports</li><li>Variation tracking</li>
+          <li>Project close-out documentation</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="Not sure yet">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-sales.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Sales and commercial admin</span>
+          <span class="svc-line">No enquiry or quote left without a follow-up.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Enquiry management</li><li>CRM and pipeline updates</li>
+          <li>Quote follow-ups</li><li>Customer records</li><li>Sales reporting</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="Websites and digital">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-digital.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">Websites and digital</span>
+          <span class="svc-line">An online presence that brings in the next enquiry.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Websites</li><li>Digital marketing</li>
+          <li>Case studies and company profiles</li><li>LinkedIn presence</li></ul>
+      </div>
+    </li>
+    <li class="svc" data-support="AI workflows">
+      <button class="svc-card" type="button" aria-haspopup="dialog">
+        <img src="assets/img/svc-ai.webp" alt="" width="614" height="768" loading="lazy">
+        <span class="svc-text"><span class="svc-title">AI workflows</span>
+          <span class="svc-line">Custom AI built around your pre-construction process.</span></span>
+        <span class="svc-plus" aria-hidden="true"></span>
+      </button>
+      <div class="svc-more" hidden>
+        <ul><li>Enquiry intake from email and portals</li><li>Scope and specification checks</li>
+          <li>Tender registers and reminders</li><li>Take-off assist into your pricing template</li>
+          <li>Drafted client replies for approval</li></ul>
+        <p>A person reviews every output before it reaches your client.</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="carousel-progress" aria-hidden="true"><span id="svcProgress"></span></div>
   </div>
 </section>
 
-<!-- ============================================================= QUOTE -->
-<section class="quote-section" id="quote">
-  <div class="container quote-grid">
-    <div class="quote-copy reveal">
-      <p class="eyebrow">Ready when you are</p>
-      <h2>From lead to close. We handle the work behind your project.</h2>
-      <p class="lede">Bring a dedicated off-site team into your operation and make every project
-        easier to pursue, organise and deliver.</p>
-      <div class="quote-figure">
-        <img src="assets/img/contact.svg" alt="" width="700" height="420" loading="lazy">
-      </div>
+<!-- Expanded service view -->
+<dialog class="svc-dialog" id="svcDialog" aria-labelledby="svcDialogTitle">
+  <div class="svc-dialog-inner">
+    <div class="svc-dialog-media"><img id="svcDialogImg" src="" alt=""></div>
+    <div class="svc-dialog-body">
+      <h3 id="svcDialogTitle"></h3>
+      <p class="svc-dialog-lede" id="svcDialogLede"></p>
+      <div id="svcDialogMore"></div>
+      <a class="btn btn-gold" href="#contact" id="svcDialogCta"><span>Ask about this service</span></a>
+    </div>
+    <button class="svc-close" type="button" id="svcDialogClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+</dialog>
+
+<!-- ================================================================ AI -->
+<section class="section ai" id="ai">
+  <div class="ai-media" aria-hidden="true"><img src="assets/img/ai-model.webp" alt="" width="1376" height="768" loading="lazy"></div>
+  <div class="container ai-grid">
+    <div class="ai-intro">
+      <h2>AI built around your pre-construction workflow</h2>
+      <p class="section-lede">We set up AI around the way your team already works, then run it
+        alongside you. It reads, sorts and drafts. Your estimators make the decisions.</p>
+      <ul class="ai-notes">
+        <li><strong>A person checks every output.</strong> Nothing reaches your client without
+          review by a Cubevia estimator or your own team.</li>
+        <li><strong>Set up around your tools.</strong> Outlook, Gmail, SharePoint, Excel and the
+          tender portals you already use.</li>
+        <li><strong>Confidential by default.</strong> Drawings and pricing are used only for your
+          work, and we're happy to sign your NDA.</li>
+      </ul>
     </div>
 
-    <div class="form-card reveal" data-delay="1">
-      <p class="eyebrow eyebrow-sm">Request a quote</p>
-      <h3>Tell us where you need more capacity.</h3>
-      <p class="small">Share a few details and Cubevia will follow up with the right support approach
-        for your operation.</p>
+    <ol class="flow" id="aiFlow">
+      <li><h3>Enquiry intake</h3>
+        <p>Reads incoming emails and portal notices, then logs each invitation to tender with
+          client, package, deadline and documents.</p></li>
+      <li><h3>Scope check</h3>
+        <p>Reviews drawings and specifications against your scope and flags gaps, exclusions
+          and compliance requirements.</p></li>
+      <li><h3>Organise</h3>
+        <p>Keeps the tender register current, files documents and reminds you before every
+          return date.</p></li>
+      <li><h3>Take-off assist</h3>
+        <p>Pulls quantities and schedules into your own pricing template, ready for an
+          estimator to check.</p></li>
+      <li><h3>Client replies</h3>
+        <p>Drafts clarifications, acknowledgements and follow-ups for you to approve and send.</p></li>
+    </ol>
+  </div>
+</section>
 
-      <!-- =====================================================================
-           FORM: delivers to contact@cubevia.com via Web3Forms.
-           ONE THING TO DO: paste your access key into the value="" below.
-           Get it free at web3forms.com by entering contact@cubevia.com.
-           Submissions go to whichever address you used to create the key.
-           ===================================================================== -->
-      <form id="quoteForm" class="form"
-            action="https://api.web3forms.com/submit"
-            method="POST" novalidate>
+<!-- ========================================================== SECTORS -->
+<section class="section sectors-section" id="who">
+  <div class="container">
+    <div class="section-head">
+      <h2>Who we work with</h2>
+      <p class="section-lede">We work behind the firms that make and install, and we never
+        compete with you for construction work.</p>
+    </div>
+    <ul class="sectors">
+      <li><span class="sector-name">Steel fabricators</span><span class="sector-note">Take-offs, pricing and fabrication drawings</span></li>
+      <li><span class="sector-name">Architectural metalwork</span><span class="sector-note">Quotations, shop drawings and approvals</span></li>
+      <li><span class="sector-name">Façade and glazing</span><span class="sector-note">Specification checks and tender returns</span></li>
+      <li><span class="sector-name">Doors and security</span><span class="sector-note">Door schedules and compliance checklists</span></li>
+      <li><span class="sector-name">Roofing and cladding</span><span class="sector-note">Measured quantities and tender packs</span></li>
+      <li><span class="sector-name">Specialist subcontractors</span><span class="sector-note">Tender support when workload peaks</span></li>
+      <li><span class="sector-name">Main contractors</span><span class="sector-note">Subcontractor enquiries and tender coordination</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================================= HOW WE WORK -->
+<section class="section how" id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>Start with one package, then scale</h2>
+      <p class="section-lede">Nobody should sign up to a monthly agreement before they've seen
+        the work.</p>
+    </div>
+
+    <ol class="journey">
+      <li><span class="phase">Talk</span><h3>Free consultation</h3>
+        <p>Tell us about your workload, your tools and where tenders slow down.</p></li>
+      <li><span class="phase">Pilot</span><h3>One live package</h3>
+        <p>We take on one tender or package so you can judge the quality and turnaround.</p></li>
+      <li><span class="phase">Repeat</span><h3>Work as it arrives</h3>
+        <p>Send packages when they land, each priced on scope and deadline.</p></li>
+      <li><span class="phase">Scale</span><h3>Monthly support</h3>
+        <p>A dedicated estimator, tender coordinator or AI workflow on a monthly agreement.</p></li>
+    </ol>
+
+    <div class="plans" id="packages">
+      <article class="plan">
+        <h3>Per project</h3>
+        <p>Individual tenders, take-offs, detailing or shop drawings, priced on scope,
+          complexity and turnaround.</p>
+      </article>
+      <article class="plan plan-featured">
+        <h3>Monthly support</h3>
+        <p>A dedicated estimator, tender coordinator, project administrator or AI workflow for
+          recurring work.</p>
+        <a class="btn btn-gold btn-sm" href="#contact"><span>Get a quote</span></a>
+      </article>
+      <article class="plan">
+        <h3>Hybrid</h3>
+        <p>A monthly minimum for predictable capacity, with extra projects priced separately.</p>
+      </article>
+    </div>
+    <p class="plans-note">Software licences are billed separately where a project needs them.</p>
+  </div>
+</section>
+
+<!-- ============================================================= ABOUT -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div>
+      <h2>A UK pre-construction partner with AI built in</h2>
+      <p class="about-text">Cubevia Ltd is registered in England and Wales. We support the
+        fabricators, manufacturers and contractors who need tenders priced and paperwork handled
+        without adding headcount.</p>
+      <p class="about-text">Our team brings more than five years of hands-on estimating and
+        pre-construction experience, paired with AI tools designed by engineers who build AI
+        systems for a living.</p>
+    </div>
+    <aside class="person">
+      <picture>
+        <source srcset="assets/logo/cubevia-mark-144.webp" type="image/webp">
+        <img src="assets/logo/cubevia-mark-144.png" alt="" width="126" height="144" loading="lazy">
+      </picture>
+      <div>
+        <p class="person-name">Kavya Vivekanandhan</p>
+        <p class="person-role">Co-founder, Director of AI &amp; Digital</p>
+        <p class="person-bio">Designs the AI workflows and digital systems behind Cubevia's
+          service.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- =========================================================== CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <h2>Tell us where tenders slow you down</h2>
+      <p class="contact-lede">Book a free consultation or ask for a quote. We'll reply by email
+        to arrange a call.</p>
+      <p class="contact-direct">Prefer email?<br><a href="mailto:contact@cubevia.com">contact@cubevia.com</a></p>
+    </div>
+
+    <div class="form-card">
+      <!-- FORM: delivers to contact@cubevia.com via Web3Forms. -->
+      <form id="quoteForm" class="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="hidden" name="access_key" value="d4aad881-7901-42da-830c-7d0f9cc70bf3">
-        <input type="hidden" name="subject" value="New quote request from cubevia.com">
+        <input type="hidden" name="subject" value="New enquiry from cubevia.com">
         <input type="hidden" name="from_name" value="Cubevia website">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" aria-hidden="true">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
 
         <div class="field-row">
-          <p class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </p>
-          <p class="field">
-            <label for="email">Work email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </p>
+          <p class="field"><label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required></p>
+          <p class="field"><label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required></p>
         </div>
-
         <div class="field-row">
-          <p class="field">
-            <label for="company">Company name</label>
-            <input id="company" name="company" type="text" autocomplete="organization">
-          </p>
-          <p class="field">
-            <label for="phone">Phone number</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel">
-          </p>
+          <p class="field"><label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization"></p>
+          <p class="field"><label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel"></p>
         </div>
-
         <div class="field-row">
-          <p class="field">
-            <label for="support">What support do you need?</label>
+          <p class="field"><label for="support">What do you need help with?</label>
             <select id="support" name="support">
-              <option value="">Select an area</option>
-              <option>Estimation and takeoff</option>
-              <option>Bidding and sales support</option>
-              <option>Pre-construction coordination</option>
-              <option>Project management support</option>
-              <option>Full off-site support</option>
+              <option value="">Choose a service</option>
+              <option>Tender management</option>
+              <option>Estimating and take-offs</option>
+              <option>Technical detailing and CAD</option>
+              <option>Design or project coordination</option>
+              <option>AI workflows</option>
+              <option>Websites and digital</option>
               <option>Not sure yet</option>
-            </select>
-          </p>
-          <p class="field">
-            <label for="volume">Monthly project volume</label>
+            </select></p>
+          <p class="field"><label for="volume">Tenders per month</label>
             <select id="volume" name="volume">
-              <option value="">Select a range</option>
-              <option>1 to 5 projects</option>
-              <option>6 to 15 projects</option>
-              <option>16 to 30 projects</option>
-              <option>More than 30 projects</option>
-            </select>
-          </p>
+              <option value="">Choose a range</option>
+              <option>1 to 5</option><option>6 to 15</option><option>16 to 30</option><option>More than 30</option>
+            </select></p>
         </div>
-
-        <p class="field">
-          <label for="message">Tell us about the work</label>
+        <p class="field"><label for="message">About your work</label>
           <textarea id="message" name="message" rows="4"
-            placeholder="Project types, current workload, or the outcome you want to improve."></textarea>
-        </p>
+            placeholder="What you make or install, your current workload, and where you need more capacity."></textarea></p>
 
-        <button class="btn btn-gold btn-block" type="submit">Request your tailored quote</button>
+        <button class="btn btn-gold btn-block" type="submit"><span>Send enquiry</span></button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        <p class="form-consent">We use these details only to reply to your enquiry. See our
+        <p class="form-consent">We use these details only to reply to your enquiry. Read our
           <a href="privacy.html">privacy notice</a>.</p>
       </form>
     </div>
@@ -393,47 +479,42 @@
 <!-- ============================================================ FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div>
-      <img class="footer-logo" src="assets/logo/cubevia-horizontal-ondark.svg" alt="Cubevia"
-           width="200" height="66" loading="lazy">
-      <p class="small">Off-site construction support for teams that need more capacity behind every project.</p>
+    <div class="footer-brand">
+      <a class="brand" href="#top" aria-label="Cubevia home">
+        <picture>
+          <source srcset="assets/logo/cubevia-mark-144.webp" type="image/webp">
+          <img src="assets/logo/cubevia-mark-144.png" alt="" width="126" height="144" loading="lazy">
+        </picture>
+        <span class="wordmark">CUBE<span>VIA</span></span>
+      </a>
+      <p>Pre-construction, estimating and tender support for UK construction businesses.</p>
     </div>
-
     <nav aria-label="Footer">
-      <p class="footer-head">Explore</p>
       <ul class="footer-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#model">How it works</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#about">About Cubevia</a></li>
+        <li><a href="#ai">AI workflows</a></li>
+        <li><a href="#how">How we work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <div>
-      <p class="footer-head">Work with Cubevia</p>
-      <p class="small">UK-based support for construction businesses ready to build a more consistent,
-        organised operation.</p>
-      <a class="link-arrow link-arrow-gold" href="#quote">Book a consultation</a>
+    <div class="footer-contact">
+      <a href="mailto:contact@cubevia.com">contact@cubevia.com</a>
+      <a class="btn btn-gold btn-sm" href="#contact"><span>Book a consultation</span></a>
     </div>
   </div>
 
-  <div class="container footer-legal">
-    <p class="small">
-      <strong>Cubevia Ltd</strong> is a private limited company registered in England and Wales,
-      company number <strong>17352353</strong>.<br>
-      Registered office: 66 Paul Street, London, EC2A 4NA, United Kingdom.
-    </p>
-  </div>
+  <p class="footer-giant gold-text" aria-hidden="true">CUBEVIA</p>
 
-  <div class="container footer-base">
-    <p class="small">© <span id="year">2026</span> Cubevia Ltd. All rights reserved.</p>
-    <p class="small">
-      <a href="privacy.html">Privacy notice</a>
-      &nbsp;·&nbsp; Estimation · Takeoff · Pre-construction · Project support
-    </p>
+  <div class="container footer-legal">
+    <p>Cubevia Ltd is a private limited company registered in England and Wales, company number
+      17352353. Registered office: 66 Paul Street, London, EC2A 4NA, United Kingdom.</p>
+    <p>© <span id="year">2026</span> Cubevia Ltd &nbsp; <a href="privacy.html">Privacy notice</a></p>
   </div>
 </footer>
 
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/vendor/motion.min.js" defer></script>
+<script src="assets/js/effects.js" defer></script>
 </body>
 </html>

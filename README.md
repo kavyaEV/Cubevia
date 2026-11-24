@@ -3,10 +3,23 @@
 Plain HTML, CSS and JavaScript. No page builder, no subscription, no framework, no build step.
 You own every file. **Hosting costs £0.**
 
-Built for **Cubevia Ltd**, company number 17352353, registered office 66 Paul Street, London,
-EC2A 4NA.
+## November 2026 redesign
 
----
+- Navy, ivory and polished gold, with the 3D cube logo cut out of its white background
+  (`assets/logo/cubevia-mark-*.png/.webp`) and the same mark used for favicons and the social
+  preview image. One self-hosted font: Plus Jakarta Sans (SIL OFL).
+- Image-led layout: full-bleed hero photo, a rolling services marquee, a scroll-revealed
+  statement, a services carousel with previous and next buttons (also arrow keys, swipe and
+  mouse drag), and cards that expand into a detail view (View Transitions where supported).
+- UK terms throughout. No public pricing. Founder shown as Kavya Vivekanandhan, Co-founder,
+  Director of AI & Digital.
+- `assets/js/main.js` runs navigation, the carousel, the expanded card view and the form, with
+  no libraries. `assets/js/effects.js` holds plain-JavaScript ports of motion-primitives
+  patterns (TextEffect, text shimmer, InfiniteSlider, AnimatedGroup, parallax) on Motion,
+  self-hosted at `assets/js/vendor/motion.min.js`. Still no build step and no third-party
+  requests. Reduced-motion visitors get the finished page with nothing hidden.
+- Photos live in `assets/img/` as WebP. Check you hold a licence for every stock photo before
+  launch.
 
 ## What is already done
 
@@ -25,11 +38,8 @@ Two edits, then email, then deploy. Details below.
 | # | What | Where |
 |---|---|---|
 | 1 | Paste your Web3Forms access key | `index.html`, around line 324 |
-| 2 | Confirm the price is £699 and not £799 | `index.html` lines 8, 41, 238 |
 
-Optional: the site says the founder is **Kavi Lakshmi** (from your brief). Your Companies House
-record says Kavyalakshmi Erode Vivekanandhan. If you want the site to match the register, edit
-`index.html` lines 42 and 281.
+The Web3Forms key is already in place.
 
 ---
 
@@ -177,10 +187,8 @@ Change the text, save, push.
 Brand colours are the token block at the top of `assets/css/styles.css`. Change `--gold` once
 and it updates everywhere.
 
-The placeholder graphics in `assets/img/` (`hero.svg`, `about.svg`, `contact.svg`) are branded
-blueprint drawings. Real photography will do more for credibility when you have it. Save new
-files into that folder and update the three `<img src=...>` lines in `index.html`. Keep each
-image under 300KB.
+Photos are in `assets/img/`. Real project photography will do more for credibility when you
+have it; save it as WebP and keep each image under 300KB.
 
 ---
 
@@ -193,6 +201,6 @@ image under 300KB.
 | Cloudflare Email Routing (forwarding) | £0 |
 | HTTPS certificate | £0, automatic |
 | Web3Forms, 250 submissions/month | £0 |
-| Fonts (Lora, Outfit, SIL Open Font License) | £0 |
+| Font (Plus Jakarta Sans, SIL Open Font License) and Motion (MIT) | £0 |
 | Domains | what you already pay GoDaddy |
 | A real sendable mailbox, when you start outreach | £0 on Zoho free, or about £5/month |

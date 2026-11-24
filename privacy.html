@@ -12,36 +12,38 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
-<meta name="theme-color" content="#16212B">
+<meta name="theme-color" content="#07142B">
 
-<link rel="preload" as="font" type="font/woff2" href="assets/fonts/outfit-regular.woff2">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/plus-jakarta-sans-variable.woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="legal-page">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Cubevia home">
-      <img src="assets/logo/cubevia-horizontal-ondark.svg" alt="Cubevia" width="190" height="63">
+      <picture>
+        <source srcset="assets/logo/cubevia-mark-144.webp" type="image/webp">
+        <img src="assets/logo/cubevia-mark-144.png" alt="" width="126" height="144">
+      </picture>
+      <span class="wordmark">CUBE<span>VIA</span></span>
     </a>
     <nav class="nav nav-simple" aria-label="Primary">
       <a href="index.html">Back to site</a>
-      <div class="nav-cta">
-        <a class="btn btn-gold btn-sm" href="index.html#quote">Request a quote</a>
-      </div>
+      <a class="btn btn-gold btn-sm nav-cta" href="index.html#contact"><span>Book a consultation</span></a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="legal">
   <div class="container legal-inner">
-    <p class="eyebrow">Legal</p>
+    <p class="kicker">Legal</p>
     <h1>Privacy notice</h1>
     <p class="lede">This notice explains what personal information Cubevia Ltd collects through
       this website, why we collect it, and what rights you have over it.</p>
-    <p class="legal-updated">Last updated: <time datetime="2026-09-06">6 September 2026</time></p>
+    <p class="legal-updated">Last updated: <time datetime="2026-11-24">24 November 2026</time></p>
 
     <h2>Who we are</h2>
     <p><strong>Cubevia Ltd</strong> is the data controller for the information described here.
@@ -58,11 +60,11 @@
       <li>Your work email address</li>
       <li>Your company name, if you give it</li>
       <li>Your phone number, if you give it</li>
-      <li>The support area and project volume you select</li>
+      <li>The service and number of tenders per month you select</li>
       <li>Anything you write in the message field</li>
     </ul>
     <p>We do not run analytics, advertising trackers or any third-party scripts on this site, and
-      we do not set cookies. Nothing about your visit is recorded unless you submit the form.</p>
+      we do not set cookies. The animation code and fonts are served from our own site. Nothing about your visit is recorded unless you submit the form.</p>
 
     <h2>Why we use it, and our lawful basis</h2>
     <p>We use these details to reply to your enquiry, prepare a quote, and discuss whether our
@@ -109,24 +111,17 @@
     <p>If we change how we handle personal information we will update this page and change the
       date at the top.</p>
 
-    <p class="legal-back"><a class="link-arrow" href="index.html">Back to Cubevia
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-        <path d="M5 12h13M12 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a></p>
+    <p class="legal-back"><a class="text-link" href="index.html">Back to Cubevia</a></p>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-legal">
     <p class="small">
-      <strong>Cubevia Ltd</strong> is a private limited company registered in England and Wales,
-      company number <strong>17352353</strong>.<br>
-      Registered office: 66 Paul Street, London, EC2A 4NA, United Kingdom.
+      Cubevia Ltd is a private limited company registered in England and Wales, company number
+      17352353. Registered office: 66 Paul Street, London, EC2A 4NA, United Kingdom.
     </p>
-  </div>
-  <div class="container footer-base">
-    <p class="small">© <span id="year">2026</span> Cubevia Ltd. All rights reserved.</p>
-    <p class="small"><a href="index.html">Home</a> &nbsp;·&nbsp; Privacy notice</p>
+    <p class="small">© <span id="year">2026</span> Cubevia Ltd &nbsp; <a href="index.html">Home</a></p>
   </div>
 </footer>
 
